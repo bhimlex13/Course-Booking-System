@@ -24,6 +24,7 @@ registerForm.addEventListener('submit', (e) => {
     if (isUserDataValid) {
     // Send a client request to the application server
     fetch("https://alex-csp2-app-sever.herokuapp.com/api/users/register", {
+      mode: 'cors',
       method: "POST",
       headers: {
         "Content-type": "application/json"
