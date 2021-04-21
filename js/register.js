@@ -2,8 +2,9 @@ const registerForm = document.querySelector('#register-form');
 
 registerForm.addEventListener('submit', (event) => {
   event.preventDefault();
+  console.dir(event);
 
-  const firstName = event.target[0].value;
+  const firstName = $(event.target);
   console.log(firstName)
 //   let lastName = document.querySelector('#last-name').value;
 //   let mobileNumber = document.querySelector('#mobile-number').value;
@@ -14,5 +15,5 @@ registerForm.addEventListener('submit', (event) => {
   
   //Simple data validation here
 // Simple data validation here
-  const isUserDataValid = (firstName !== "" && lastName !== "" && mobileNumber.length === 11 && emailAddress !== "" && password === confirmPassword);
+  const isUserDataValid = (firstName !== "" && lastName !== "" && mobileNumber.length === 13 && emailAddress !== "" && password === confirmPassword);
 });
