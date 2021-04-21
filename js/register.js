@@ -23,7 +23,7 @@ registerForm.addEventListener('submit', (e) => {
   
     if (isUserDataValid) {
     // Send a client request to the application server
-    fetch("https://cors-anywhere.herokuapp.com/alex-csp2-app-sever.herokuapp.com/api/users/register", {
+    fetch("https://alex-csp2-app-sever.herokuapp.com/api/users/register", {
       method: "POST",
       headers: {
         mode: 'no-cors',
