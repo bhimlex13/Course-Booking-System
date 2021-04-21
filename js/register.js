@@ -16,6 +16,21 @@ registerForm.addEventListener('submit', (e) => {
 
   if(isUserDataValid) {
    // Send a client request to the application sever
+    fetch(" https://alex-csp2-app-sever.herokuapp.com/api/users/register", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+           firstName,
+           lastName,
+           emailAddress,
+           password,
+           mobileNumber
+          })
+      })
+    .then()
+    .then();
     
   } else {
   alert("Required field(s) is/are invalid.");
