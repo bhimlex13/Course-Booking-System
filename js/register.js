@@ -26,7 +26,6 @@ registerForm.addEventListener('submit', (e) => {
     fetch("https://alex-csp2-app-sever.herokuapp.com/api/users/register", {
       method: "POST",
       headers: {
-        mode: 'no-cors',
         "Content-type": "application/json"
       },
       body: JSON.stringify({
