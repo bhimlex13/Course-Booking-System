@@ -17,7 +17,7 @@ registerForm.addEventListener("submit", e => {
   const password = document.querySelector("#password").value;
   const confirmPassword = document.querySelector("#confirm-password").value;
   
-  var userD = {
+  let userD = {
       firstName,
       lastName,
       mobileNumber
