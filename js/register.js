@@ -53,12 +53,10 @@ registerForm.addEventListener("submit", e => {
       })
       .then(result => {
          alert("User successfully registered!");
-         console.log("User successfully registered!");
-         console.dir(userD);
+      })
+      .then(data => {
+        window.location.replace("/login.html");
       });
-      // .then(data => {
-      //   window.location.replace("/login.html");
-      // })
   } else {
     alert("Required field(s) is/are invalid");
   }
