@@ -1,6 +1,6 @@
-const registerForm = document.querySelector('#register-form');
+const registerForm = document.querySelector("#register-form");
 
-registerForm.addEventListener('submit', (e) => {
+registerForm.addEventListener("submit", e => {
   event.preventDefault();
 
   // const firstName = e.target[0].value;
@@ -9,19 +9,25 @@ registerForm.addEventListener('submit', (e) => {
   // const emailAddress = e.target[3].value;
   // const password = e.target[4].value;
   // const confirmPassword = e.target[5].value;
-  
+
   const firstName = document.querySelector("#first-name").value;
   const lastName = document.querySelector("#last-name").value;
   const mobileNumber = document.querySelector("#mobile-number").value;
   const emailAddress = document.querySelector("#email-address").value;
   const password = document.querySelector("#password").value;
   const confirmPassword = document.querySelector("#confirm-password").value;
-  
 
-// Simple data validation here
-  const isUserDataValid = (firstName !== "" && lastName !== "" && mobileNumber.length === 13 && emailAddress !== "" && password !== "" && confirmPassword !== "" && password === confirmPassword);
-  
-    if (isUserDataValid) {
+  // Simple data validation here
+  const isUserDataValid =
+    firstName !== "" &&
+    lastName !== "" &&
+    mobileNumber.length === 13 &&
+    emailAddress !== "" &&
+    password !== "" &&
+    confirmPassword !== "" &&
+    password === confirmPassword;
+
+  if (isUserDataValid) {
     // Send a client request to the application server
     fetch("https://alex-csp2-app-sever.herokuapp.com/api/users/register", {
       method: "POST",
@@ -37,14 +43,19 @@ registerForm.addEventListener('submit', (e) => {
       })
     })
       .then(response => {
-        return response.json();
-    })
+        return response.json({
+          message: "User Successfully Registered",
+          data: response
+        });
+      })
       .then(data => {
-         window.location.replace('/login.html');
-    });
+        window.location.replace("/login.html");
+      })
+      .then(data => {
+         alert("User successfully registered!");
+
+      });
   } else {
     alert("Required field(s) is/are invalid");
   }
 });
-
-
