@@ -68,6 +68,7 @@ registerForm.addEventListener("submit", e => {
             })
             .then(data => {
               if (data.data) {
+                alert("Registration was successful.");
                 window.location.replace("/login.html");
               } else {
                 alert("Cannot create the new user provided.");
