@@ -16,12 +16,12 @@ registerForm.addEventListener("submit", e => {
   // const emailAddress = document.querySelector("#email-address").value;
   // const password = document.querySelector("#password").value;
   // const confirmPassword = document.querySelector("#confirm-password").value;
-  
+
   let userD = {
-      firstName,
-      lastName,
-      mobileNumber
-  }
+    firstName,
+    lastName,
+    mobileNumber
+  };
 
   // Simple data validation here
   const isUserDataValid =
@@ -35,17 +35,24 @@ registerForm.addEventListener("submit", e => {
 
   if (isUserDataValid) {
     // Send a client request to the application server
-    
+
     // checkk email
     fetch("https://alex-csp2-app-sever.herokuapp.com/api/users/check-email", {
       method: "POST",
       headers: {
         "Content-type": "application/json"
       },
-      body: JSON.stringify({ emailAddress  })
-    })
+      body: JSON.stringify({ emailAddress })
+        .then(res => res.json())
+        .then(data => {
+          if (!data.data) {
+          } else {
+            alert("Email is already");
+          }
+        })
+    });
     // Initiate the registration
-    
+
     fetch("https://alex-csp2-app-sever.herokuapp.com/api/users/register", {
       method: "POST",
       headers: {
