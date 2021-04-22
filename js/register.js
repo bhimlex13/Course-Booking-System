@@ -34,48 +34,51 @@ registerForm.addEventListener("submit", e => {
     password === confirmPassword;
 
   if (isUserDataValid) {
-    // Send a client request to the application server
-
-    // checkk email
+    // Check if user (email) already exist
     fetch("https://alex-csp2-app-sever.herokuapp.com/api/users/check-email", {
       method: "POST",
       headers: {
-        "Content-type": "application/json"
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({ emailAddress })
-        .then(res => res.json())
-        .then(data => {
-          if (!data.data) {
-          } else {
-            alert("Email is already");
-          }
-        })
-    });
-    // Initiate the registration
-
-    fetch("https://alex-csp2-app-sever.herokuapp.com/api/users/register", {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json"
-      },
-      body: JSON.stringify({
-        firstName,
-        lastName,
-        emailAddress,
-        password,
-        mobileNumber
-      })
     })
-      .then(response => {
-        return response.json();
-      })
-      .then(result => {
-         alert("User successfully registered!");
-      })
+      .then(res => res.json())
       .then(data => {
-        window.location.replace("/login.html");
+        if (!data.data) {
+          // Email is good, then register the user
+          // Initiate the registration process
+          fetch(
+            "https://alex-csp2-app-sever.herokuapp.com/api/users/register",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify({
+                firstName,
+                lastName,
+                emailAddress,
+                password,
+                mobileNumber
+              })
+            }
+          )
+            .then(response => {
+              return response.json();
+            })
+            .then(data => {
+              if (data.data) {
+                window.location.replace("/login.html");
+              } else {
+                alert("Cannot create the new user provided.");
+              }
+            });
+        } else {
+          // Email already exist
+          alert("Email is already in use.");
+        }
       });
   } else {
-    alert("Required field(s) is/are invalid");
+    alert("Required field(s) is/are invalid.");
   }
 });
