@@ -9,9 +9,24 @@ loginForm.addEventListener("submit", e => {
   const isUserDataValid = emailAddress !== "" && password !== "";
 
   if (isUserDataValid) {
-    fetch("", "")
-      .then()
-      .then();
+    fetch(" https://alex-csp2-app-sever.herokuapp.com/api/users/login", {
+      method: "",
+      headers: { "Content-Type": "application/json"},
+      body: JSON.stringify({
+        emailAddress,
+        password
+      })
+    })
+      .then(res => res.json)
+      .then(data => {
+          if(data.data) {
+            // User not yet registered
+            window.location.replace('/courses.html');
+          } else {
+            // User not het registered
+            
+          }
+    });
   } else {
     alert("Missing Require Field(s)");
   }
