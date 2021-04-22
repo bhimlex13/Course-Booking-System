@@ -18,7 +18,9 @@ registerForm.addEventListener("submit", e => {
   const confirmPassword = document.querySelector("#confirm-password").value;
   
   var userD = {
-      firstName
+      firstName,
+      lastName,
+      mobileNumber
   }
 
   // Simple data validation here
@@ -52,6 +54,7 @@ registerForm.addEventListener("submit", e => {
       .then(result => {
          alert("User successfully registered!");
          console.log("User successfully registered!");
+         console.dir(userD);
       });
       // .then(data => {
       //   window.location.replace("/login.html");
