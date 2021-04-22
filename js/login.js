@@ -9,25 +9,27 @@ loginForm.addEventListener("submit", e => {
   const isUserDataValid = emailAddress !== "" && password !== "";
 
   if (isUserDataValid) {
-    fetch(" https://alex-csp2-app-sever.herokuapp.com/api/users/login", {
-      method: "",
-      headers: { "Content-Type": "application/json"},
+    fetch("https://alex-csp2-app-sever.herokuapp.com/api/users/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify({
         emailAddress,
         password
       })
     })
-      .then(res => res.json)
+      .then(res => res.json())
       .then(data => {
-          if(data.data) {
-            // User not yet registered
-            window.location.replace('/courses.html');
-          } else {
-            // User not het registered
-            
-          }
+        if (data.data) {
+          // Registered user
+          window.location.replace('./courses.html');
+        } else {
+          // User not yet registered
+          alert('User account was not found.');
+        }
     });
   } else {
-    alert("Missing Require Field(s)");
+    alert("Missing required field(s).");
   }
 });
