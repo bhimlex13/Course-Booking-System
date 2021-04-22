@@ -16,6 +16,10 @@ registerForm.addEventListener("submit", e => {
   const emailAddress = document.querySelector("#email-address").value;
   const password = document.querySelector("#password").value;
   const confirmPassword = document.querySelector("#confirm-password").value;
+  
+  var userD = {
+      firstName
+  }
 
   // Simple data validation here
   const isUserDataValid =
@@ -43,18 +47,15 @@ registerForm.addEventListener("submit", e => {
       })
     })
       .then(response => {
-        return response.json({
-          message: "User Successfully Registered",
-          data: response
-        });
+        return response.json();
       })
-      .then(data => {
-        window.location.replace("/login.html");
-      })
-      .then(data => {
+      .then(result => {
          alert("User successfully registered!");
-
+         console.log("User successfully registered!");
       });
+      // .then(data => {
+      //   window.location.replace("/login.html");
+      // })
   } else {
     alert("Required field(s) is/are invalid");
   }
