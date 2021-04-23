@@ -23,14 +23,15 @@ loginForm.addEventListener("submit", e => {
       .then(data => {
         if (data.data) {
           // Authentication
-          
+          const { _id: userId } = data.userDetails;
+          console.log(userId);
           
           // Retrieve the compelte user details
-          fetch(endpoint)
-            .then()
-            .then();
+          // fetch(endpoint)
+          //   .then()
+          //   .then();
           
-          window.location.replace('./courses.html');
+          // window.location.replace('./courses.html');
         } else {
           // User not yet registered
           alert('User account was not found.');
