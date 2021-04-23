@@ -27,7 +27,13 @@ loginForm.addEventListener("submit", e => {
           console.log(userId);
 
           // Retrieve the compelte user details
-          fetch("https://alex-csp2-app-sever.herokuapp.com/api/users/details?id="+userId)
+          fetch(
+            "https://alex-csp2-app-sever.herokuapp.com/api/users/details?id=" +
+              userId,
+            {
+              method: "GET"
+            }
+          )
             .then(res => res.json())
             .then(data => {
               window.location.replace("./courses.html");
