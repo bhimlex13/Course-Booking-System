@@ -29,14 +29,12 @@ loginForm.addEventListener("submit", e => {
           // Retrieve the compelte user details
           fetch(
             "https://alex-csp2-app-sever.herokuapp.com/api/users/details?id=" +
-              userId,
-            {
-              method: "GET"
-            }
+              userId
           )
             .then(res => res.json())
             .then(data => {
-              window.location.replace("./courses.html");
+              console.dir(data);
+              // window.location.replace("./courses.html");
             });
         } else {
           // User not yet registered
