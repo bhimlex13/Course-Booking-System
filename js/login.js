@@ -22,7 +22,13 @@ loginForm.addEventListener("submit", e => {
       .then(res => res.json())
       .then(data => {
         if (data.data) {
-          // Registered user
+          // Authentication
+          
+          
+          // Retrieve the compelte user details
+          fetch(endpoint)
+            
+          
           window.location.replace('./courses.html');
         } else {
           // User not yet registered
