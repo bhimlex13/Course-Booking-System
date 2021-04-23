@@ -27,7 +27,8 @@ loginForm.addEventListener("submit", e => {
           
           // Retrieve the compelte user details
           fetch(endpoint)
-            
+            .then()
+            .then();
           
           window.location.replace('./courses.html');
         } else {
