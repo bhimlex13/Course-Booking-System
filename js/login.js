@@ -25,18 +25,18 @@ loginForm.addEventListener("submit", e => {
           // Authentication
           const { _id: userId } = data.userDetails;
           console.log(userId);
-          
+
           // Retrieve the compelte user details
-          // fetch(endpoint)
-          //   .then()
-          //   .then();
-          
-          // window.location.replace('./courses.html');
+          fetch("https://alex-csp2-app-sever.herokuapp.com/api/users/details?id="+userId)
+            .then(res => res.json())
+            .then(data => {
+              window.location.replace("./courses.html");
+            });
         } else {
           // User not yet registered
-          alert('User account was not found.');
+          alert("User account was not found.");
         }
-    });
+      });
   } else {
     alert("Missing required field(s).");
   }
