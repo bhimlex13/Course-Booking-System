@@ -6,9 +6,12 @@ let isAdmin = localStorage.getItem("isAdmin");
 // Create a variable to contain the val
 
 let userId = localStorage.getItem("userId");
+let firstName = localStorage.getItem("fistName");
+console.log(firstName)
+
 
 let logOutElement = document.querySelector("#log-out");
-
+let userName = document.querySelector("#fn");
 // Select all navigation elements if user is logged-in
 let userLoggedInElements = document.querySelectorAll(".user-is-in");
 
@@ -18,6 +21,7 @@ let userLoggedOutElements = document.querySelectorAll(".user-is-out");
 if((userId !== null) && (typeof(userId) === "string")) {
   userLoggedInElements.forEach(el => {
       el.classList.toggle("hide");
+      document.getElementById("fn").innerHTML = firstName;
   });
   
     userLoggedOutElements.forEach(el => {

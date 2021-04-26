@@ -35,6 +35,7 @@ loginForm.addEventListener("submit", e => {
             .then(data => {
               localStorage.setItem("userId", data.userDetails._id);
               localStorage.setItem("isAdmin", data.userDetails.isAdmin);
+              localStorage.setItem("firstName", data.userDetails.firstName);
               window.location.replace("./courses.html");
             });
         } else {
