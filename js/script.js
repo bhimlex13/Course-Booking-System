@@ -7,7 +7,7 @@ let isAdmin = localStorage.getItem("isAdmin");
 
 let userId = localStorage.getItem("userId");
 
-let logoutElement = document.querySelector("#log-out");
+let logOutElement = document.querySelector("#log-out");
 
 // Select all navigation elements if user is logged-in
 let userLoggedInElements = document.querySelectorAll(".user-is-in");
@@ -26,7 +26,8 @@ if((userId !== null) && (typeof(userId) === "string")) {
 }
 
 
-logoutElement.addEventListener('click', function(){
-	localStorage.removeItem("userId");
-	localStorage.removeItem("isAdmin");
+logOutElement.addEventListener('click', event => {
+	localStorage.clear();
+  confirm("Are you sure you want to log out?");
+  window.location.replace("./login.html");
 });
