@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no"
     />
 
-    <title>iDiscite</title>
+    <title>iDiscite </title>
 
     <!-- fontawesome icons -->
     <link
@@ -35,7 +35,7 @@
     />
 
     <!-- external css -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
@@ -53,7 +53,7 @@
           <li class="nav-item ">
             <a href="./index.html" class="nav-link"> Home </a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a href="./courses.html" class="nav-link"> Courses </a>
           </li>
           <li class="nav-item ">
@@ -73,35 +73,42 @@
     </nav>
     <!-- end nav -->
 
-    <header class="jumbotron text-center">
-      <h1>iDiscite</h1>
-      <p class="lead">Booking for everyone, everywhere</p>
-      <a href="./courses.html" class="btn btn-outline-success"> Book Now! </a>
-    </header>
+    <div class="container my-5">
+      <h2 class="text-center my-5">Create A Course</h2>
+      <form id="createCourse">
+        <div class="form-row">
+          <div class="form-group col-md-9">
+            <input
+              type="text"
+              id="courseName"
+              class="form-control"
+              placeholder="Course Name"
+            />
+          </div>
 
-    <!-- end jumbo -->
+          <div class="form-group col-md-3">
+            <input
+              type="number"
+              id="coursePrice"
+              class="form-control"
+              placeholder="Course Price"
+            />
+          </div>
+        </div>
 
-    <main class="container my-5">
-      <div id="admin-button" class="row">
-        <div class="col-md-12">
-          <a href="./new_course.html" class="btn btn-block btn-success">
-            Create a new course
-          </a>
-        </div>
-      </div>
-      <div id="coursesContainer" class="row">
-        <div class="col-md-12">
-          <section class="jumbotron text-center my-5">
-            <h2 class="my-5">
-              <span class="spinner-border text-success"></span> Fetching
-              courses...
-            </h2>
-          </section>
-        </div>
-      </div>
-      <!-- end row -->
-    </main>
-    <!-- end cards -->
+        <input
+          type="text"
+          id="courseDescription"
+          class="form-control"
+          placeholder="Course Description"
+        />
+        <!-- end form row -->
+
+        <button type="submit" class="btn btn-block btn-success my-3">
+          Create Course
+        </button>
+      </form>
+    </div>
 
     <footer class="footer bg-success fixed-bottom">
       <p class="p-3 mb-0 text-center text-white">
@@ -135,9 +142,9 @@
     </script>
 
     <!-- external global js -->
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
 
     <!-- external js -->
-    <script src="js/courses.js"></script>
+    <script src="./js/new_course.js"></script>
   </body>
 </html>
