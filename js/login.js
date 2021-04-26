@@ -33,10 +33,9 @@ loginForm.addEventListener("submit", e => {
           )
             .then(res => res.json())
             .then(data => {
-             localStorage.setItem('userId', data.userDetails._id);
-             localStorage.setItem('isAdmin', data.userDetails.isAdmin);
+              localStorage.setItem("userId", data.userDetails._id);
+              localStorage.setItem("isAdmin", data.userDetails.isAdmin);
               window.location.replace("./courses.html");
-            
             });
         } else {
           // User not yet registered

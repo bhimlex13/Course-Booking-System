@@ -6,3 +6,7 @@ let isAdmin = localStorage.getItem("isAdmin");
 // Create a variable to contain the val
 
 let userId = localStorage.getItem("userId");
+
+if(userId !== null) {
+  
+}
