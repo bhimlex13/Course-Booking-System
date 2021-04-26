@@ -7,6 +7,12 @@ let isAdmin = localStorage.getItem("isAdmin");
 
 let userId = localStorage.getItem("userId");
 
+// Select all navigation elements if user is logged-in
+let userLoggedInElements = document.querySelectorAll(".user-is-in");
+
+// Select all navigation elements if user is logged-out
+let userLoggedOutElements = document.querySelectorAll(".user-is-out");
+
 if(userId !== null) {
   
 }
