@@ -13,6 +13,12 @@ let userLoggedInElements = document.querySelectorAll(".user-is-in");
 // Select all navigation elements if user is logged-out
 let userLoggedOutElements = document.querySelectorAll(".user-is-out");
 
-if(userId !== null) {
+if((userId !== null) && (typeof(userId) === "string")) {
+  userLoggedInElements.forEach(el => {
+      el.classList.toggle("hide");
+  });
   
+    userLoggedOutElements.forEach(el => {
+      el.classList.toggle("hide");
+  });
 }
