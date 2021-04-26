@@ -7,6 +7,8 @@ let isAdmin = localStorage.getItem("isAdmin");
 
 let userId = localStorage.getItem("userId");
 
+let logoutElement = document.querySelector("#log-out");
+
 // Select all navigation elements if user is logged-in
 let userLoggedInElements = document.querySelectorAll(".user-is-in");
 
@@ -22,3 +24,9 @@ if((userId !== null) && (typeof(userId) === "string")) {
       el.classList.toggle("hide");
   });
 }
+
+
+logoutElement.addEventListener('click', function(){
+	localStorage.removeItem("userId");
+	localStorage.removeItem("isAdmin");
+});
