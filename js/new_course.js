@@ -1,5 +1,8 @@
-if (userId !== null && typeof userId === "string") {
-  alert(`User with name: ${userName} is logged-in!`);
+if (userId !== null && typeof userId === "string" && isAdmin === true) {
+  if (isAdmin === true) {
+    
+  } else {
+  }
 } else {
   window.location.replace("./login.html");
 }
