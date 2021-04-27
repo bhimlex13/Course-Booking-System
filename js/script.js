@@ -19,7 +19,7 @@ let userLoggedOutElements = document.querySelectorAll(".user-is-out");
 if((userId !== null) && (typeof(userId) === "string")) {
   userLoggedInElements.forEach(el => {
       el.classList.toggle("hide");
-      document.getElementById('user-name').innerHTML = userName;
+      document.getElementById('profile').innerHTML = userName;
   });
   
     userLoggedOutElements.forEach(el => {
