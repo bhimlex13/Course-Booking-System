@@ -2,4 +2,8 @@
 
 const profileContainerElement = document.querySelector("#profile-container");
 
-profileContainerElement.EventListener('click')
+if (userId !== null && typeof userId === "string") {
+  console.log(`User with name: ${userName} is logged-in!`);
+} else {
+  window.location.replace("./login.html");
+}
