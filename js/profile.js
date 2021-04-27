@@ -24,6 +24,16 @@ if (userId !== null && typeof userId === "string") {
       } = data.userDetails;
       profileContainerElement.innerHTML = `<div class="col-md-12">
   <section class="jumbotron my-5">		
+          	<div class="mb-3">
+            <label for="first-name" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="first-name" value="${firstName}" readonly>
+          </div>          	<div class="mb-3">
+            <label for="last-name" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="last-name" value="${lastName}" readonly>
+          </div>          	<div class="mb-3">
+            <label for="email-address" class="form-label">Email Address</label>
+            <input type="text" class="form-control" id="email-address" value="${emailAddress}" readonly>
+          </div>
     <h3 class="text-center">First Name: ${firstName}</h3>
     <h3 class="text-center">Last Name: ${lastName}</h3>
     <h3 class="text-center">Email: ${emailAddress}</h3>
