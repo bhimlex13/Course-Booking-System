@@ -23,7 +23,7 @@ if (userId !== null && typeof userId === "string") {
         enrollments
       } = data.userDetails;
       profileContainerElement.innerHTML = `<div class="col-md-12">
-  <section class="jumbotron my-5">		
+  <section >		
           	<div class="mb-3">
             <label for="first-name" class="form-label">First Name</label>
             <input type="text" class="form-control" id="first-name" value="${firstName}" readonly>
