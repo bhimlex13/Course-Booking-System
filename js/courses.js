@@ -15,6 +15,17 @@ if (!isAdmin || isAdmin == "false") {
 fetch("https://alex-csp2-app-sever.herokuapp.com/api/courses")
 .then(res => res.json())
 .then(data => {
+  
+  if(isAdmin === null || isAdmin === "false") {
+    data.courses.filter(courses => {
+          
+    })
+  } else {
+
+
+  }
+  
+  
   const coursesElement = data.courses.map(course => {
   return `<div class="col-md-6 my-3">
     <div class='card'>
@@ -44,8 +55,8 @@ fetch("https://alex-csp2-app-sever.herokuapp.com/api/courses")
 </div>`
   });
   
-console.log(coursesElement.join(""));
-  
+// console.log(coursesElement.join(""));
+  document.querySelector("#courses-container").innerHTML = coursesElement.join("");
   
 });
 
