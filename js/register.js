@@ -1,8 +1,7 @@
-const registerForm = document.querySelector("#register-form");
+if (userId !== null) window.history.back();
 
-if (userId !== null && typeof userId === "string") {
-        window.history.back();
-};
+
+const registerForm = document.querySelector("#register-form");
 
 
 registerForm.addEventListener("submit", e => {

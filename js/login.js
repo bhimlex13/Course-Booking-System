@@ -1,6 +1,4 @@
-if (userId !== null && typeof userId === "string") {
-        window.history.back();
-};
+if (userId !== null) window.history.back();
 
 const loginForm = document.querySelector("#login-form");
 
