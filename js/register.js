@@ -1,5 +1,10 @@
 const registerForm = document.querySelector("#register-form");
 
+if (userId !== null && typeof userId === "string") {
+        window.history.back();
+};
+
+
 registerForm.addEventListener("submit", e => {
   event.preventDefault();
 
@@ -83,3 +88,5 @@ registerForm.addEventListener("submit", e => {
     alert("Required field(s) is/are invalid.");
   }
 });
+
+

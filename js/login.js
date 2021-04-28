@@ -1,4 +1,10 @@
+if (userId !== null && typeof userId === "string") {
+        window.history.back();
+};
+
 const loginForm = document.querySelector("#login-form");
+
+
 
 loginForm.addEventListener("submit", e => {
   e.preventDefault();
@@ -7,6 +13,8 @@ loginForm.addEventListener("submit", e => {
   const password = e.target[1].value;
 
   const isUserDataValid = emailAddress !== "" && password !== "";
+  
+  
 
   if (isUserDataValid) {
     fetch("https://alex-csp2-app-sever.herokuapp.com/api/users/login", {
