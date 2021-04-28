@@ -4,8 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
 
-
-	<title>iDiscite</title>
+   <link rel="icon" href="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Flogo2.png?v=1619639445100" type="image/gif" sizes="16x16">
+  
+	<title>Discite</title>
 
     <!-- fontawesome icons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -24,46 +25,42 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-      <a class="navbar-brand" href="./index.html"> iDiscite </a>
-      <button
-        class="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#zuitterNav"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="zuitterNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item ">
-            <a href="./index.html" class="nav-link"> Home </a>
-          </li>
-          <li class="nav-item ">
-            <a href="./courses.html" class="nav-link"> Courses </a>
-          </li>
-          <li class="nav-item user-is-in hide active">
-            <a id = "profile" href="./profile.html" class="nav-link"> Profile </a>
-          </li>
-          <li class="nav-item user-is-out ">
-            <a href="./register.html" class="nav-link"> Register </a>
-          </li>
-          <li class="nav-item user-is-out">
-            <a href="./login.html" class="nav-link"> Log In </a>
-          </li>
-          <li class="nav-item user-is-in hide">
-            <a id = "log-out" href="#" class="nav-link"> Log Out </a>
-          </li>
+  
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div class="logo">
+        <a href="#"><IMG SRC="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Flogo2.png?v=1619639445100" ALT="some text" WIDTH=160 HEIGHT=120></a>
+      </div>
+      
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
+      
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__close" id="nav-close">
+          <i class='bx bx-x'></i>
+        </div>
+        
+        <ul class="nav__list">
+          <li class="nav__item nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+          <li class="nav__item nav-item"><a href="./courses.html" class="nav-link">Courses</a></li>
+          <li class="nav__item nav-item user-is-in fn hide active"><a id = "profile" href="./profile.html" class="nav-link">Profile</a></li>
+          <li id = "register" class="nav__item nav-item user-is-out"><a href="./register.html" class="nav-link">Register</a></li>
+          <li id = "login" class="nav__item nav-item user-is-out">  <a href="./login.html" class="nav-link">Log In</a></li>
+          <li class="nav__item nav-item user-is-in hide">  <a id = "log-out" href="#" class="nav-link">Log Out</a></li>
         </ul>
       </div>
     </nav>
-    <!-- end nav -->
+  </header>
+    
+    <div id="prof_div" class="jumbotron jumbotron-fluid bg-white"></div>
 
-	<main class="container my-5">
+	<main id="prof_main" class="jumbotron jumbotron-fluid text-center container my-5">
 		<div id="profile-container" class="row">
 			<div class="col-md-12">
 				<section class="jumbotron text-center my-5">		
-					<h2 class="my-5"><span class="spinner-border text-success"></span> Fetching User Details...</h2>
+					<h2 class="my-5"><span class="spinner-border text-info"></span> Fetching User Details...</h2>
 				</section>
 			</div>
 		</div>
@@ -74,7 +71,7 @@
 
 	
 
-    <footer class="footer bg-success fixed-bottom">
+    <footer class="footer bg-info">
       <p class="p-3 mb-0 text-center text-white">
         Copyright &copy; 2021 by Alexander Oro
       </p>

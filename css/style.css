@@ -415,7 +415,7 @@ section {
   left: 50;
   width: 100%;
   height: 100vh;
-  background: url(../img/splash-b.jpg);
+  background: url(https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fsplash-b.jpg?v=1619639445584);
   background-size: 1800px;
   background-position: center;
   mix-blend-mode: screen;
@@ -459,7 +459,7 @@ section h2 {
 @keyframes animate {
   0% {
     transform: translateZ(2000px);
-    background: url(../img/bg.jpg);
+    background: url(https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fbg.jpg?v=1619639460891);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -467,7 +467,7 @@ section h2 {
   }
   100%{
     transform: translateZ(0px);
-    background: url(../img/bg.jpg);
+    background: url(https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fbg.jpg?v=1619639460891);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -479,7 +479,7 @@ section h2 {
 section.active .banner .blocks {
   
   animation: animateTwo 2s ease-in-out forwards;
-  background: url(../img/bg.jpg);
+  background: url(https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fbg.jpg?v=1619639460891);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -490,7 +490,7 @@ section.active .banner .blocks {
 @keyframes animateTwo {
   0% {
     transform: translateZ(0px);
-    background: url(../img/bg.jpg);
+    background: url(https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fbg.jpg?v=1619639460891);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -498,7 +498,7 @@ section.active .banner .blocks {
   }
   100%{
     transform: translateZ(2000px);
-    background: url(../img/bg.jpg);
+    background: url(https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fbg.jpg?v=1619639460891);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
