@@ -23,11 +23,21 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
 
 /*  Code Along */
-
+.btn, 
+.card,
+.nav-bar-toggler,
+.jumbotron{
+  border-radius: 0;
+}
 
 /* CA ends here */
 
 
+
+
+
+
+/*  */
 /*===== VARIABLES CSS =====*/
 :root{
   --header-height: 3rem;
@@ -40,7 +50,7 @@ font-family: 'Ubuntu', sans-serif; */
   --white-color: #ffffff;
   
   /*===== Font and typography =====*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: 'Ubuntu', sans-serif;
   --big-font-size: 2.5rem;
   --normal-font-size: .938rem;
   
@@ -87,6 +97,7 @@ body{
 .nav__list a{
   color: rgb(53, 62, 70);
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .nav__list .active:hover, .nav__list a:hover{
