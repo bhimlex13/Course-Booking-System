@@ -25,10 +25,10 @@ font-family: 'Ubuntu', sans-serif; */
 
 #hero-image {
   position: relative;
-  padding: 10rem 0;
+  padding: 10% 0;
   
 }
-#hero-image:before {
+#hero-image:after {
   content: " ";
   display: block;
   position: absolute;
