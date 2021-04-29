@@ -422,13 +422,14 @@ section {
   position: absolute;
   top: 0;
   left: 50;
-  width: 75%;
-  height: 50vh;
+  width: 100%;
+  height: 100vh;
   background: url(https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fsplash.jpg?v=1619681351262);
-  background-size: 1800px;
+  background-size: 1100px;
   background-position: center;
   mix-blend-mode: screen;
-  opacity: 100%;
+  background-repeat: no-repeat;
+  opacity: 90%;
 }
 
 section h2 {
