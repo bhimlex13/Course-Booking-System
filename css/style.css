@@ -23,6 +23,30 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
 
 
+#hero-image {
+  position: relative;
+}
+#hero-image:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-image: url("https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fpakata-goh-EJMTKCZ00I0-unsplash.jpg?v=1619693527975");
+  background-size: cover;
+  background-repeat: no-repeat;
+    margin-left: auto;
+  margin-right: auto;
+}
+#hero-content {
+  position: relative;
+}
+
+
+
 
 /*  Code Along */
 .btn, 
