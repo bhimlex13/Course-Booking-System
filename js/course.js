@@ -7,3 +7,7 @@ const courseId = queryStringObject.get("id");
 
 
 //
+
+fetch("https://alex-csp2-app-sever.herokuapp.com/api/courses?id="+courseId)
+.then()
+.then();
