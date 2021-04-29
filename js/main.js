@@ -56,8 +56,8 @@ setTimeout(function(){
 // typing animation script
 var typed = new Typed(".typing", {
     strings: ["Create your own application or website.","Never Too Late to Learn a New Skill!","Register to learn Web Development today."],
-    typeSpeed: 100,
-    backSpeed: 60,
+    typeSpeed: 120,
+    backSpeed: 80,
     loop: true,
     
 });
