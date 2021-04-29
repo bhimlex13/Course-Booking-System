@@ -35,11 +35,10 @@ font-family: 'Ubuntu', sans-serif; */
   width: 100%;
   height: 100%;
   opacity: 0.6;
-  background-image: url("https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fpakata-goh-EJMTKCZ00I0-unsplash.jpg?v=1619693527975");
+  background-image: url("https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fhitesh-choudhary-6ybh0VVWC3Y-unsplash.jpg?v=1619693739450");
   background-size: cover;
   background-repeat: no-repeat;
-    margin-left: auto;
-  margin-right: auto;
+  
 }
 #hero-content {
   position: relative;
