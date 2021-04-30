@@ -13,15 +13,19 @@ fetch("https://alex-csp2-app-sever.herokuapp.com/api/courses?id="+courseId)
 .then(data => {
       
     const {name, description, price } =  data.course;
-    console.dir(data);
+    // console.dir(data);
   
     document.querySelector("#course-name").innerText = name;
     document.querySelector("#course-description").innerText = description;
     document.querySelector("#course-price").innerText = price;
 });
 
-
 // Do not allow non-authenticated users or admins to enroll
-if(userId === null || isAdmin === "true") {
-  document.querySelector("#btn-enroll").style.display = "none";
+const btnEnroll = document.querySelector("#btn-enroll");
+if (userId === null || isAdmin === "true") {
+  btnEnroll.style.display = "none";
+} else {
+  btnEnroll.addEventListener("click", event => {
+    console.log('enroll button was clicked!');
+  })
 }
