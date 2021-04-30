@@ -26,6 +26,23 @@ if (userId === null || isAdmin === "true") {
   btnEnroll.style.display = "none";
 } else {
   btnEnroll.addEventListener("click", event => {
-    console.log('enroll button was clicked!');
-  })
+    // console.log('enroll button was clicked!');
+    
+    fetch("https://alex-csp2-app-sever.herokuapp.com/api/users/enroll",{
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            userId,
+            courseId
+        })
+    })
+      .then(res => res.json())
+      .then(data => {
+       // console.dir(data.message);  
+
+        if(data.message)   
+    });
+  });
 }
