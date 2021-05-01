@@ -1,201 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta
-  name="viewport"
-  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no"
-  />
- 
-  <!-- =====BOX ICONS===== -->
-  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" ></script>
-  
-   <link rel="icon" href="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Flogo2.png?v=1619639445100" type="image/gif" sizes="16x16">
-  
-  <title>Discite Coding School</title>
-  
-  <!-- fontawesome icons -->
-  <link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-  crossorigin="anonymous"
-  />
-  
-  <!-- google fonts -->
-  <link
-  href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap"
-  rel="stylesheet"
-  />
-  
-  <!-- animate on scroll *optional* -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  
-  <!-- bootstrap css -->
-  <link
-  rel="stylesheet"
-  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-  crossorigin="anonymous"
-  />
-  
-  <!-- external css -->
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  
-  <!--===== HEADER =====-->
-  <header class="l-header">
-    <nav class="navbar nav bd-grid">
-      <div class="logo">
-        <a href="#"><IMG SRC="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Flogo2.png?v=1619639445100" ALT="some text" WIDTH=160 HEIGHT=120></a>
-      </div>
-      
-      <div class="nav__toggle" id="nav-toggle">
-        <i class='bx bx-menu'></i>
-      </div>
-      
-      <div class="nav__menu" id="nav-menu">
-        <div class="nav__close" id="nav-close">
-          <i class='bx bx-x'></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no"
+    />
+
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Flogo2.png?v=1619639445100"
+      type="image/gif"
+      sizes="16x16"
+    />
+
+    <title>Discite Coding School</title>
+
+    <!-- fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- animate on scroll *optional* -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <!-- external css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="navbar nav bd-grid">
+        <div class="logo">
+          <a href="#"
+            ><img
+              src="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Flogo2.png?v=1619639445100"
+              alt="some text"
+              width="160"
+              height="120"
+          /></a>
         </div>
-        
-        <ul class="nav__list">
-          <li class="nav__item nav-item active"><a href="./index.html" class="nav-link">Home</a></li>
-          <li class="nav__item nav-item"><a href="./courses.html" class="nav-link">Courses</a></li>
-          <li class="nav__item nav-item user-is-in fn hide"><a id = "profile" href="./profile.html" class="nav-link">Profile</a></li>
-          <li id = "register" class="nav__item nav-item user-is-out"><a href="./register.html" class="nav-link">Register</a></li>
-          <li id = "login" class="nav__item nav-item user-is-out">  <a href="./login.html" class="nav-link">Log In</a></li>
-          <li class="nav__item nav-item user-is-in hide">  <a id = "log-out" href="#" class="nav-link">Log Out</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
 
-  <main class="l-main">
-    <!--===== HOME =====-->
-    <section class="home" id="home">
-      <div class="home__container bd-grid">
-        <div class="home__img">
-          <img id= "img-1" src="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fimg1.png?v=1619639747641" alt="" data-speed="-2" class="move">
-          <img id= "img-2" src="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fimg1.png?v=1619639747641" alt="" data-speed="2" class="move">
-          <img id= "img-3" src="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fimg3.png?v=1619639446842" alt="" data-speed="2" class="move">
-          <img id= "img-4" src="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fimg4.png?v=1619639447880" alt="" data-speed="-2" class="move">
-          <img id= "img-5" src="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fimg5.png?v=1619639446354" alt="" data-speed="-2" class="move">
-          <img id= "img-6" src="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fimg6.png?v=1619639448653" alt="" data-speed="2" class="move">
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
         </div>
-        <div class="banner">
-          <div class="blocks"></div>
+
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+
+          <ul class="nav__list">
+            <li class="nav__item nav-item active">
+              <a href="./index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav__item nav-item">
+              <a href="./courses.html" class="nav-link">Courses</a>
+            </li>
+            <li class="nav__item nav-item user-is-in fn hide">
+              <a id="profile" href="./profile.html" class="nav-link">Profile</a>
+            </li>
+            <li id="register" class="nav__item nav-item user-is-out">
+              <a href="./register.html" class="nav-link">Register</a>
+            </li>
+            <li id="login" class="nav__item nav-item user-is-out">
+              <a href="./login.html" class="nav-link">Log In</a>
+            </li>
+            <li class="nav__item nav-item user-is-in hide">
+              <a id="log-out" href="#" class="nav-link">Log Out</a>
+            </li>
+          </ul>
         </div>
-        <div class="home__data">
-          <h1 class="home__title">Start Here!</h1>
-          <p class="home__description">Learn to code now. <br><span class="typing"></span></p>
-  
-          <a href="./courses.html" class="home__button">Get Started</a>
-        </div>
-      </div>
-    </section>
-  </main>
+      </nav>
+    </header>
 
-
-  <!--  -->
-  <div class="custom-shape-divider-bottom-1619631205">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-    </svg>
-</div>
-
-
-
-  <!--  -->
-  <main class="container my-5">
-    
-    <div class="row">
-      <div class="col-md-4 my-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Choose what to learn</h5>
-            <p class="card-text">
-             From building websites to analyzing data, the choice is yours.
-            Not sure where to start? We'll point you in the right direction.
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home" id="home">
+        <div class="home__container bd-grid">
+          <div class="home__img">
+            <img
+              id="img-1"
+              src="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fimg1.png?v=1619639747641"
+              alt=""
+              data-speed="-2"
+              class="move"
+            />
+            <img
+              id="img-2"
+              src="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fimg1.png?v=1619639747641"
+              alt=""
+              data-speed="2"
+              class="move"
+            />
+            <img
+              id="img-3"
+              src="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fimg3.png?v=1619639446842"
+              alt=""
+              data-speed="2"
+              class="move"
+            />
+            <img
+              id="img-4"
+              src="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fimg4.png?v=1619639447880"
+              alt=""
+              data-speed="-2"
+              class="move"
+            />
+            <img
+              id="img-5"
+              src="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fimg5.png?v=1619639446354"
+              alt=""
+              data-speed="-2"
+              class="move"
+            />
+            <img
+              id="img-6"
+              src="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fimg6.png?v=1619639448653"
+              alt=""
+              data-speed="2"
+              class="move"
+            />
+          </div>
+          <div class="banner">
+            <div class="blocks"></div>
+          </div>
+          <div class="home__data">
+            <h1 class="home__title">Start Here!</h1>
+            <p class="home__description">
+              Learn to code now. <br /><span class="typing"></span>
             </p>
+
+            <a href="./courses.html" class="home__button">Get Started</a>
           </div>
         </div>
-      </div>
-      <!-- end 4 cols	 -->
-      
-      <div class="col-md-4 my-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Learn by doing</h5>
-            <p class="card-text">
-              No matter your experience level, you'll be writing real, working code in minutes.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- end 4 cols	 -->
-      
-      <div class="col-md-4 my-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Land your dream job</h5>
-            <p class="card-text">
-              Coding skills have never been more in-demand. Learn everything you need to take your career to the next level.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- end 4 cols	 -->
+      </section>
+    </main>
+
+    <!--  -->
+    <div class="custom-shape-divider-bottom-1619631205">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+          opacity=".25"
+          class="shape-fill"
+        ></path>
+        <path
+          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+          opacity=".5"
+          class="shape-fill"
+        ></path>
+        <path
+          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+          class="shape-fill"
+        ></path>
+      </svg>
     </div>
-    <!-- end row -->
-  </main>
-  <!-- end cards -->
-  
-  <!-- footer -->
-  <footer class="footer bg-info">
-    <p class="p-3 mb-0 text-center text-white">
-      Copyright &copy; 2021 by Alexander Oro
-    </p>
-  </footer>
-  <!-- end footer -->
-  
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script
-  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-  crossorigin="anonymous"
-  ></script>
-  <script
-  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-  crossorigin="anonymous"
-  ></script>
-  <script
-  src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-  crossorigin="anonymous"
-  ></script>
-  
-  <!-- AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  
-  <!-- AOS initialization -->
-  <script>
-    AOS.init();
-  </script>
-  
-  <!--===== GSAP =====-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-  
-  <!--===== MAIN JS =====-->
-  <script src="./js/main.js"></script>
-  
-  <!-- external global js -->
-  <script src="./js/script.js"></script>
-</body>
+
+    <!--  -->
+    <main class="main-con ">
+      <div id="GP-div" class="my-5">
+        <div id="Parent-div" class="row">
+          <div class="con-t col-md-4 my-3">
+            <div class="card card my-3">
+              <div class="c-content">
+                <div class="circle my-1"></div>
+                <img
+                  src="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fcreate-web-applications-in-asp-dot-net-and-java-script-mvc.png?v=1619863102632"
+                  alt="logo"
+                />
+              </div>
+              <div class="info">
+                <h1 class="title">Choose what to learn</h1>
+                <h3>
+                  From building websites to analyzing data, the choice is yours.
+                  Not sure where to start? We'll point you in the right
+                  direction.
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="con-t  col-md-4 my-3">
+            <div class="card my-3">
+              <div class="c-content">
+                <div class="circle"></div>
+                <img
+                  src="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2FImagine-1-brain.png?v=1619863006037"
+                  alt="logo"
+                />
+              </div>
+              <div class="info">
+                <h1 class="title">Learn by doing</h1>
+                <h3>
+                  No matter your experience level, you'll be writing real,
+                  working code in minutes.
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="con-t  col-md-4 my-3">
+            <div class="card">
+              <div class="c-content">
+                <div class="circle"></div>
+                <img
+                  src="https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Foutput-onlinepngtools%20(14).png?v=1619863446175"
+                  alt="logo"
+                />
+              </div>
+              <div class="info">
+                <h1 class="title">Land your dream job</h1>
+                <h3>
+                  Coding skills have never been more in-demand. Learn everything
+                  you need to take your career to the next level.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end row -->
+    </main>
+    <!-- end cards -->
+
+    <!-- footer -->
+    <footer class="footer bg-info">
+      <p class="p-3 mb-0 text-center text-white">
+        Copyright &copy; 2021 by Alexander Oro
+      </p>
+    </footer>
+    <!-- end footer -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- AOS initialization -->
+    <script>
+      AOS.init();
+    </script>
+
+    <!--===== GSAP =====-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="./js/main.js"></script>
+
+    <!-- external global js -->
+    <script src="./js/script.js"></script>
+  </body>
 </html>

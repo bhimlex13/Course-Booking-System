@@ -12,7 +12,7 @@ body {
   justify-content: center;
   perspective: 1000px;
 }
-.container {
+.con-t  {
   width: 50%;
   display: flex;
   justify-content: center;

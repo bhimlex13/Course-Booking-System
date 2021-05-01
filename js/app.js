@@ -2,7 +2,7 @@
 
 //Movement Animation to happen
 const card = document.querySelector(".card");
-const container = document.querySelector(".container");
+const container = document.querySelector(".con-t");
 //Items
 const title = document.querySelector(".title");
 const cContent = document.querySelector(".c-content img");
