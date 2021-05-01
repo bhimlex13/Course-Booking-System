@@ -35,6 +35,11 @@ font-family: 'Ubuntu', sans-serif; */
   width: 30rem;
   border-radius: 30px;
   padding: 0rem 5rem;
+  border: 0 solid #fff;
+/*   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2); */
+}
+
+.card:hover {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 
@@ -54,7 +59,7 @@ font-family: 'Ubuntu', sans-serif; */
   opacity: 0.5;
 }
 .c-content img {
-  width: 13rem;
+  width: 15rem;
   z-index: 2;
   transition: all 0.75s ease-out;
 }
