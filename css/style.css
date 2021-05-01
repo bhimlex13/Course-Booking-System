@@ -23,11 +23,6 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
 
 
-/* #hero-image {
-  position: relative;
-  padding: 10% 0;
-  
-} */
 #hero-image {
   content: " ";
   display: block;
@@ -37,19 +32,17 @@ font-family: 'Ubuntu', sans-serif; */
   top: 0;
   width: 100%;
   height: 100%;
-  opacity: .5;
+  opacity: .9;
   background-image: url("https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Fpexels-olia-danilevich-4974915.jpg?v=1619695655459");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 
-#hero-image h1, p1
-/* #hero-content {
-  position: relative;
-} */
-
-
+#hero-image *{
+  filter: contrast(200%);
+  color: #fff;
+}
 
 
 /*  Code Along */
@@ -61,7 +54,6 @@ font-family: 'Ubuntu', sans-serif; */
 }
 
 /* CA ends here */
-
 
 
 /*  */
