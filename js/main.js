@@ -41,7 +41,7 @@ gsap.from('.home__img', {opacity: 0, duration: 1, delay:1.3, y: 30})
 
 const banner = document.getElementsByClassName('banner')[0];
 const blocks = document.getElementsByClassName('blocks');
-const media = matchMedia('(max-width: 414px)');
+const media = matchMedia('(max-width: 768px)');
 
 
 media.addEventListener("change", ({media,matches}) => {
