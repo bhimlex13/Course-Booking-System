@@ -41,10 +41,10 @@ font-family: 'Ubuntu', sans-serif; */
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-#hero-image h1{
-  color: #fff;
+#hero-content {
+  position: relative;
 }
+
 
 
 
