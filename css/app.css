@@ -32,29 +32,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("https://cdn.glitch.com/ced8bd0a-62c9-400c-b1f2-3ee2d408aaf1%2Foutput-onlinepngtools%20(9).png?v=1619858911584");
-  width: 15rem;
-  height: 15rem;
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+.circle {
+  width: 18rem;
+  height: 18rem;
+  background: linear-gradient(
+    to right,
+    #fff,
+    #2786a3
+  );
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: .5;
 }
 .c-content img {
   width: 15rem;
   z-index: 2;
   transition: all 0.75s ease-out;
 }
-.circle {
-  width: 15rem;
-  height: 15rem;
-  background: linear-gradient(
-    to right,
-    #a9d7e6,
-    #2786a3
-  );
-  position: relative;
-  border-radius: 50%;
-  z-index: 1;
-}
+
 
 .info h1 {
   font-size: 3rem;
