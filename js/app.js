@@ -1,8 +1,3 @@
-const theParent = document.querySelector("#Parent-div");
-
-theParent.addEventListener("click", doSomething)
-
-
 
 
 //Movement Animation to happen
