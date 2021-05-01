@@ -1,5 +1,4 @@
 
-
 /*===== MENU SHOW Y HIDDEN =====*/
 const navMenu = document.getElementById('nav-menu'),
 toggleMenu = document.getElementById('nav-toggle'),
@@ -56,13 +55,12 @@ setTimeout(function(){
 
 // typing animation script
 var typed = new Typed(".typing", {
-    strings: ["Create your own application or website.","Never Too Late to Learn a New Skill!","Register to learn Web Development today."],
-    typeSpeed: 120,
-    backSpeed: 80,
+    strings: ["Never Too Late","to Learn","a New Skill!"],
+    typeSpeed: 60,
+    backSpeed: 20,
     loop: true,
     
 });
 
 
 
-/////

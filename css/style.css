@@ -82,7 +82,7 @@ font-family: 'Ubuntu', sans-serif; */
   --z-fixed: 100;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
   :root{
     --big-font-size: 5rem;
     --normal-font-size: 1rem;
@@ -243,7 +243,7 @@ img{
     position: fixed;
     top: 0;
     right: -100%;
-    width: 70%;
+    width: 100%;
     height: 100%;
     padding: 3.5rem 1.5rem 0;
     background: rgba(255,255,255,.3);
@@ -265,7 +265,7 @@ img{
 }
 
 .nav__close, .nav__link, .nav__logo, .nav__toggle{
-  color: var(--white-color);
+  color: var(--first-color-darken);
   font-weight: 600;
   font-size: 1.5rem;
 }
@@ -370,21 +370,193 @@ span {
   font-size: 18px;
   border-radius: 40px;
   box-shadow: -2px -2px 8px rgba(255,255,255,1),
-              -2px -2px 12px rgba(255,255,255,0.5),
-             inset 2px 2px 4px rgba(255,255,255,0.1),
-              2px 2px 8px rgba(0,0,0,0.15);
+  -2px -2px 12px rgba(255,255,255,0.5),
+  inset 2px 2px 4px rgba(255,255,255,0.1),
+  2px 2px 8px rgba(0,0,0,0.15);
 }
 
 .home__button:hover{
   text-decoration: none;
   box-shadow: inset -2px -2px 8px rgba(255,255,255,1),
-              inset -2px -2px 12px rgba(255,255,255,0.5),
-             inset 2px 2px 4px rgba(255,255,255,0.1),
-             inset 2px 2px 8px rgba(0,0,0,0.15);
+  inset -2px -2px 12px rgba(255,255,255,0.5),
+  inset 2px 2px 4px rgba(255,255,255,0.1),
+  inset 2px 2px 8px rgba(0,0,0,0.15);
 }
 
 /* ===== MEDIA QUERIES =====*/
-@media screen and (min-width: 768px){
+
+@media (max-width: 1024px) {
+  
+  .home__title {
+    margin: 0 3rem;
+    font-size: 3rem;
+  }
+  .home__description{
+    margin: 1rem 3rem;
+    font-size: 1.3rem;
+  }
+  .home__button{
+    margin: 1rem 3rem; 
+  }
+
+  .home__img{
+    width: 0%;
+    height: 100%;
+    left: -5%;
+  }
+
+ 
+  .home__container:before{
+    left: 20%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .home__title {
+    margin: 0 3rem;
+    font-size: 3rem;
+  }
+  
+  .home__description{
+    margin: 1rem 3rem; 
+  }
+  .home__button{
+    margin: 1rem 3rem;
+  }
+  .home__img{
+    width: 50%;
+    height: 10vh;
+    left: -10%;
+  }
+  
+  .home__container:before{
+    left: 30%;
+  }
+
+  .logo img{
+    width: 40%;
+    height: 40%;
+  }
+  body{
+    margin: 0;
+  }
+  
+  .nav{
+    height: calc(var(--header-height) + 1.5rem);
+    
+  }
+  
+  .nav__list{
+    display: flex;
+  }
+  
+  .nav__item a{
+    font-weight: 600;
+  }
+  
+  .nav__item{
+    margin-left: 3rem;
+    margin-bottom: 0;
+  }
+  
+  .home__container{
+    height: 100vh;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows:  1fr;
+    row-gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  body{
+    margin: 0;
+  }
+  
+  .nav{
+    height: calc(var(--header-height) + 1.5rem);
+    
+  }
+  
+  .nav__list{
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-between;
+    padding: 1rem 0;
+  }
+  
+  .nav__item a{
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  
+  .nav__item{
+    margin: 1em 0;
+    text-align: center;
+  }
+  
+  .home__container{
+    height: 100vh;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows:  1fr;
+    row-gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home__img{
+    order: 1;
+    width: 375px;
+    height: 289px;
+  }
+  
+  .home__img img{
+    width: 375px;
+  }
+  
+}
+
+@media (max-width: 414px) {
+  .home__title {
+    margin: 0 .1rem;
+    font-size: 2rem;
+    color: ivory;
+  }
+  
+  .home__description, .home__description span{
+    margin: 1rem .1rem; 
+    color: ivory;
+  }
+  .home__button{
+    margin: 1rem .1rem;
+    font-size: .7rem;
+    background-color: ivory;
+  }
+ 
+  
+  .home__container{
+    height: 100vh;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows:  1fr;
+    row-gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home__img{
+    display: none;
+  }
+  
+
+  .home__container:before{
+    left: 1%;
+    width: 20%;
+    height: 10vh;
+  }
+}
+
+
+@media screen and (min-width: 769px){
   body{
     margin: 0;
   }
