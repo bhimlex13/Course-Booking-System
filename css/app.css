@@ -47,18 +47,18 @@ body {
   opacity: .5;
 }
 .c-content img {
-  width: 18rem;
+  width: 15rem;
   z-index: 2;
   transition: all 0.75s ease-out;
 }
 
 
 .info h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   transition: all 0.75s ease-out;
 }
 .info h3 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 2rem 0rem;
   color: #585858;
   font-weight: lighter;
