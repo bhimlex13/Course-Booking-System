@@ -41,24 +41,23 @@ gsap.from('.home__img', {opacity: 0, duration: 1, delay:1.3, y: 30})
 
 const banner = document.getElementsByClassName('banner')[0];
 const blocks = document.getElementsByClassName('blocks');
-const media = matchMedia('(max-width: 768px)');
+const smallDevice = window.matchMedia('(max-width: 768px)');
 
-
-media.addEventListener("change", ({media,matches}) => {
-    if(!matches){
-        for (var i = 1; i < 400; i++){
-            banner.innerHTML += "<div class='blocks'></div>";
-            const duration = Math.random() * 5;
-            blocks[i].style.animationDuration = duration+'s';
-        }
-        
-        const section = document.querySelector('section');
-        setTimeout(function(){
-            section.classList.add('active')
-        },8000) // add class active after 14seconds  
+if(!smallDevice.matches) {
+    console.log(true);
+    for (var i = 1; i < 400; i++){
+        banner.innerHTML += "<div class='blocks'></div>";
+        const duration = Math.random() * 5;
+        blocks[i].style.animationDuration = duration+'s';
     }
-    console.log("larger than 414px")
-})
+    
+    const section = document.querySelector('section');
+    setTimeout(function(){
+        section.classList.add('active')
+    },8000) // add class active after 14seconds
+} else {
+    console.log(false);
+}
 
 
 // typing animation script
