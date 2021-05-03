@@ -29,7 +29,7 @@ if (userId !== null && typeof userId === "string") {
         return `
           <tr>
             <td>${courseName}</td>
-            <td>${(new Date(enrolledOn)).toLocaleString('en-PH', {timeZone: 'Asia/Manila'}) }</td>
+            <td>${(new Date(enrolledOn)).toLocaleString() }</td>
             <td>${status.toUpperCase()}</td>
           </tr>
         `;
