@@ -22,6 +22,22 @@ if (userId !== null && typeof userId === "string") {
         mobileNumber,
         enrollments
       } = data.userDetails;
+
+          // Create the elements for the list of enrollements
+      const enrollmentHistory = enrollments.map(enrollment => {
+        let { courseName, enrolledOn, status } = enrollment;
+        return `
+          <tr>
+            <td>${ courseName }</td>
+            <td>${ enrolledOn }</td>
+            <td>${ status }</td>
+          </tr>
+        `;
+      });
+    
+      console.dir(enrollmentHistory.join());
+        
+            // Display those user details to the profile    
       profileContainerElement.innerHTML = `<div class="col-md-12">
   <section >		
           	<div class="mb-3">
