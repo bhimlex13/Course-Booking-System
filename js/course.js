@@ -19,14 +19,16 @@ fetch("https://alex-csp2-app-sever.herokuapp.com/api/courses?id=" + courseId)
 
     //Display all enrollees if user is an admin
     const enrolleesList = enrollees.map(enrollee => {
-      const { firstName, lastName, emailAddress } = enrollees;
+      const { firstName, lastName, emailAddress } = enrollee;
       return ` 
-            <tr>
-                  <td>${lastName},${firstName}</td>
-                  <td>${emailAddress}</td>
-</tr>
-`;
+              <tr>
+                    <td>${lastName},${firstName}</td>
+                    <td>${emailAddress}</td>
+              </tr>
+            `;
     });
+  
+  console.log(enrolleesList.join(""));
   });
 
 // Do not allow non-authenticated users or admins to enroll
