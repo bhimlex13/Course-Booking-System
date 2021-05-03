@@ -23,21 +23,18 @@ if (userId !== null && typeof userId === "string") {
         enrollments
       } = data.userDetails;
 
-          // Create the elements for the list of enrollements
+      // Create the elements for the list of enrollements
       const enrollmentHistory = enrollments.map(enrollment => {
         let { courseName, enrolledOn, status } = enrollment;
         return `
           <tr>
-            <td>${ courseName }</td>
-            <td>${ enrolledOn }</td>
-            <td>${ status }</td>
+            <td>${courseName}</td>
+            <td>${enrolledOn}</td>
+            <td>${status.toUpperCase()}</td>
           </tr>
         `;
       });
-    
-      console.dir(enrollmentHistory.join());
-        
-            // Display those user details to the profile    
+      // Display those user details to the profile
       profileContainerElement.innerHTML = `<div class="col-md-12">
   <section >		
           	<div class="mb-3">
@@ -63,7 +60,7 @@ if (userId !== null && typeof userId === "string") {
         </tr>
       </thead>
       <tbody>
-        ${enrollments}
+        ${enrollmentHistory.join("")}
       </tbody>
     </table> 
   </section>
