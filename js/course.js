@@ -28,7 +28,9 @@ fetch("https://alex-csp2-app-sever.herokuapp.com/api/courses?id=" + courseId)
             `;
     });
   
-  console.log(enrolleesList.join(""));
+  // console.log(enrolleesList.join(""));
+  
+  
   });
 
 // Do not allow non-authenticated users or admins to enroll
