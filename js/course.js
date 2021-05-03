@@ -18,6 +18,12 @@ fetch("https://alex-csp2-app-sever.herokuapp.com/api/courses?id=" + courseId)
     // console.dir(enrollees);
 
     //Display all enrollees if user is an admin
+  if(){
+
+  } else {
+
+  }
+  
     const enrolleesList = enrollees.map(enrollee => {
       const { firstName, lastName, emailAddress } = enrollee;
       return ` 
@@ -29,6 +35,7 @@ fetch("https://alex-csp2-app-sever.herokuapp.com/api/courses?id=" + courseId)
     });
   
   // console.log(enrolleesList.join(""));
+  document.querySelector("table.table tbody").innerHTML = enrolleesList.join("");
   
   
   });
