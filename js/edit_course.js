@@ -1,5 +1,2 @@
 
 
- if (userId && isAdmin === "true") {
-
- }
