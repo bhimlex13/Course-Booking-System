@@ -52,10 +52,10 @@ fetch("https://alex-csp2-app-sever.herokuapp.com/api/courses")
                       <a href="./course.html?id=${course._id}" class="btn btn-outline-primary btn-block btn-course">View</a>
                     </div>
                     <div class="col-sm-12 col-md-4 mb-1">
-                      <a href="./edit_course.html?id=${course._id}" id="" class="admin_button btn btn-outline-secondary btn-block btn-course">Edit</a>
+                      <a href="./edit_course.html?id=${course._id}" class="admin_button btn btn-outline-secondary btn-block btn-course btn-update">Edit</a>
                     </div>
                     <div class="col-sm-12 col-md-4 mb-1">
-                      <a href="./delete_course.html?id=${course._id}" id="" class="admin_button btn btn-outline-danger btn-block btn-course">Delete</a>
+                      <a href="./delete_course.html?id=${course._id}" class="admin_button btn btn-outline-danger btn-block btn-course btn-update">Delete</a>
                     </div>
                   </div>
               </div>
@@ -67,10 +67,12 @@ fetch("https://alex-csp2-app-sever.herokuapp.com/api/courses")
   // console.log(coursesElements.join(""));
   
   document.querySelector("#courses-container").innerHTML = coursesElements.join("");
+    // Hide the 'edit' and 'delete' buttons if user is unauthenticated and non-admin
+  if (isAdmin === null || isAdmin === "false") {
+    document.querySelectorAll(".btn-update").forEach(btn => {
+      btn.style.display = "none";
+    });
+  }
+  
 });
 
-if (isAdmin == "false") {
-  document.querySelectorAll(".admin_button").forEach(button => {
-    console.log(button);
-  })
- }
