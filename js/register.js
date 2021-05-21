@@ -3,7 +3,7 @@ if (userId !== null) window.history.back();
 
 const registerForm = document.querySelector("#register-form");
 
-
+console.log("working")
 registerForm.addEventListener("submit", e => {
   event.preventDefault();
 
