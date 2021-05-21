@@ -1,9 +1,9 @@
-if (userId !== null) window.history.back();
 
+// if (userId !== null) window.history.back();
 
 const registerForm = document.querySelector("#register-form");
+// console.log("This is working");
 
-console.log("working")
 registerForm.addEventListener("submit", e => {
   event.preventDefault();
 
