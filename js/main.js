@@ -39,9 +39,9 @@ gsap.from('.home__button', {opacity: 0, duration: 1, delay:2.1, y: 30})
 gsap.from('.home__img', {opacity: 0, duration: 1, delay:1.3, y: 30})
 
 
-const banner = document.getElementsByClassName('banner')[0];
-const blocks = document.getElementsByClassName('blocks');
-const smallDevice = window.matchMedia('(max-width: 768px)');
+// const banner = document.getElementsByClassName('banner')[0];
+// const blocks = document.getElementsByClassName('blocks');
+// const smallDevice = window.matchMedia('(max-width: 768px)');
 
 if(!smallDevice.matches) {
     console.log(true);
